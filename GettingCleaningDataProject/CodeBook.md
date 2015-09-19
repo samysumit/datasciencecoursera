@@ -2,7 +2,7 @@
 title: "TidyData.md"
 author: "Sumit Bhagchandani"
 date: "September 17, 2015"
-output: word_document
+output: html_document
 ---
 
 This document describes run_analysis.R file. The code has detailed comment's at every major step as highlighted :
@@ -116,7 +116,24 @@ Variable tidydf is a data frame containing mean of each column grouping by subje
 The tidy data set now looks like as follows
 
 ```r
-##head(tidydf[,1:5])
+head(tidydf[,1:5])
+```
+
+```
+##   subject           activity timebodyaccelerometer-mean-X
+## 1       1             LAYING                    0.2215982
+## 2       1            SITTING                    0.2612376
+## 3       1           STANDING                    0.2789176
+## 4       1            WALKING                    0.2773308
+## 5       1 WALKING_DOWNSTAIRS                    0.2891883
+## 6       1   WALKING_UPSTAIRS                    0.2554617
+##   timebodyaccelerometer-mean-Y timebodyaccelerometer-mean-Z
+## 1                 -0.040513953                   -0.1132036
+## 2                 -0.001308288                   -0.1045442
+## 3                 -0.016137590                   -0.1106018
+## 4                 -0.017383819                   -0.1111481
+## 5                 -0.009918505                   -0.1075662
+## 6                 -0.023953149                   -0.0973020
 ```
 
 ### Exporting data set into a text file
